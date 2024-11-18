@@ -11,10 +11,11 @@ This repository contains a collection of fun and simple CSS animations.
 
 2. **Rocket Flying**  
    A simple rocket animation that launches upwards.
+   
    ![image](https://github.com/user-attachments/assets/c1d50007-e41c-486e-a7bf-6d938406dabc)
 
 
-3. **Rain Animation**  
+4. **Rain Animation**  
    A simple rain animation using CSS to simulate falling rain drops.
    ![image](https://github.com/user-attachments/assets/629216d0-e9fa-40a8-9c07-24f49009453e)
 
