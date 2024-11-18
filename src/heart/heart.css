@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #222831;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#heart {
+    position: relative;
+    width: 800px;
+    height: 800px;
+}
+
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 600px; /* Increased to align with the larger size */
+    top: 0;
+    width: 600px; /* Doubled the width */
+    height: 1000px; /* Doubled the height */
+    background: transparent;
+    -moz-border-radius: 600px 600px 0 0; /* Adjusted for larger size */
+    border-radius: 600px 600px 0 0; /* Proportional to new size */
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    animation: fillHeart 5s ease-in-out infinite;
+}
+
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+@keyframes fillHeart {
+
+    0% {
+        background: linear-gradient(to top, #ff2a2a 0%, transparent 0%);
+    }
+    5% {
+        background: linear-gradient(to top, #ff2a2a 5%, transparent 10%);
+    }
+    10% {
+        background: linear-gradient(to top, #ff2a2a 10%, transparent 20%);
+    }
+    20% {
+        background: linear-gradient(to top, #ff2a2a 20%, transparent 30%);
+    }
+    30% {
+        background: linear-gradient(to top, #ff2a2a 30%, transparent 40%);
+    }
+    40% {
+        background: linear-gradient(to top, #ff2a2a 40%, transparent 50%);
+    }
+    50% {
+        background: linear-gradient(to top, #ff2a2a 50%, transparent 60%);
+    }
+    60% {
+        background: linear-gradient(to top, #ff2a2a 60%, transparent 70%);
+    }
+    70% {
+        background: linear-gradient(to top, #ff2a2a 70%, transparent 80%);
+    }
+    80% {
+        background: linear-gradient(to top, #ff2a2a 80%, transparent 90%);
+    }
+    90% {
+        background: linear-gradient(to top, #ff2a2a 90%, transparent 100%);
+    }
+    100% {
+        background: linear-gradient(to top, #ff2a2a 100%, transparent 100%);
+    }
+}

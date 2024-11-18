@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #222831;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#rocket {
+}
