@@ -1,12 +1,33 @@
 body {
     margin: 0;
     padding: 0;
-    background: #222831;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #ff9a9e, #72A0C1); /* Background gradient */
 }
 
-#rocket {
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.rocket-photo {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fly 10s infinite;
+}
+
+@keyframes fly {
+    0% {
+        bottom: -100px;
+    }
+    100% {
+        bottom: 100vh;
+    }
 }

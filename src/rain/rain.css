@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #2a2a72, #009ffd);
+    height: 100vh;
+}
+
+.rain-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.raindrop {
+    position: absolute;
+    width: 50px; /* Adjust to the size of your image */
+    height: 80px; /* Adjust to the size of your image */
+    background-image: url('rain.png'); /* Path to your raindrop image */
+    background-size: cover; /* Make sure the image fills the div */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
