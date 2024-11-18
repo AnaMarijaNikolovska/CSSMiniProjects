@@ -21,6 +21,8 @@ body {
     left: 50%;
     transform: translateX(-50%);
     animation: fly 10s infinite;
+    height: 150px;
+    width: 150px;
 }
 
 @keyframes fly {

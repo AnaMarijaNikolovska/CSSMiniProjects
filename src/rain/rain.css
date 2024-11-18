@@ -13,12 +13,12 @@ body {
 
 .raindrop {
     position: absolute;
-    width: 50px; /* Adjust to the size of your image */
-    height: 80px; /* Adjust to the size of your image */
-    background-image: url('rain.png'); /* Path to your raindrop image */
-    background-size: cover; /* Make sure the image fills the div */
+    width: 30px;
+    height: 50px;
+    background-image: url('rain.png');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; /* Center the image */
+    background-position: center;
     animation: fall linear infinite;
 }
 
