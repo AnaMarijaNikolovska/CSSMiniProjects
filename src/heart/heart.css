@@ -3,28 +3,28 @@ body {
     padding: 0;
     background: #222831;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
+    height: 70vh;
 }
 
 #heart {
     position: relative;
-    width: 800px;
-    height: 800px;
+    width: 300px;
+    height: 300px;
 }
 
 #heart:before,
 #heart:after {
     position: absolute;
     content: "";
-    left: 600px; /* Increased to align with the larger size */
+    left: 300px; /* Increased to align with the larger size */
     top: 0;
-    width: 600px; /* Doubled the width */
-    height: 1000px; /* Doubled the height */
+    width: 300px; /* Doubled the width */
+    height: 500px; /* Doubled the height */
     background: transparent;
-    -moz-border-radius: 600px 600px 0 0; /* Adjusted for larger size */
-    border-radius: 600px 600px 0 0; /* Proportional to new size */
+    -moz-border-radius: 300px 300px 0 0; /* Adjusted for larger size */
+    border-radius: 300px 300px 0 0; /* Proportional to new size */
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-transform-origin: 0 100%;
